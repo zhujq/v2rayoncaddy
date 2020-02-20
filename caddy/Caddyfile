@@ -1,4 +1,4 @@
-http://zhujq.us-south.cf.appdomain.cloud:8080 {
+localhost:8080 {
     root ./static/
 
     proxy /dw :30003 {
