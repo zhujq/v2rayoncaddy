@@ -25,7 +25,7 @@ RUN mkdir -m 777 /v2ray && mkdir -m 777 /caddy && wget --no-check-certificate -O
 
 ADD entrypoint.sh /entrypoint.sh
 ADD config.json /config.json
-ADD caddy /caddy
+ADD caddy/ /caddy/
 
 RUN chmod +x /entrypoint.sh 
 RUN chmod +x /caddy/caddy 
