@@ -1,0 +1,7 @@
+localhost:8080 {
+    
+    proxy /dw :30003 {
+        websocket
+        header_upstream -Origin
+    }
+}

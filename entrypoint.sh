@@ -6,11 +6,6 @@
 #fi
 
 
-./caddy/caddy --conf=./caddy/Caddyfile
-
-cd /v2ray
-
-cp -f /config.json .
-chmod +x v2ray v2ctl
+./caddy 
 ./v2ray
 
