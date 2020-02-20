@@ -17,8 +17,11 @@ FROM alpine:latest
 # && chgrp -R 0 /v2raybin \
 # && chmod -R g+rwX /v2raybin 
 
-RUN mkdir -m 777 /v2ray
-RUN mkdir -m 777 /caddy
+RUN mkdir -m 777 /v2ray && mkdir -m 777 /caddy && wget --no-check-certificate -O v2ray.zip https://github.com/v2ray/v2ray-core/releases/latest/download/v2ray-linux-64.zip \
+	&& unzip v2ray.zip /v2ray \
+	&& chmod 777 /v2ray/v2ctl \
+	&& chmod 777 /v2ray/v2ray \
+	&& rm -rf v2ray.zip 
 
 ADD entrypoint.sh /entrypoint.sh
 ADD config.json /config.json
