@@ -25,7 +25,7 @@ ADD config.json /config.json
 ADD entrypoint.sh /entrypoint.sh
 ADD caddy /caddy
 ADD Caddyfile /Caddyfile
-ADD index.html /index.html
+ADD static/ /static/
 
 RUN chmod +x /entrypoint.sh  && chmod +x /caddy &&  chmod +x /v2ray &&  chmod +x /v2ctl  
 

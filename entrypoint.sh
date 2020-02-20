@@ -6,6 +6,6 @@
 #fi
 
 
-./caddy 
+nohup ./caddy &
 ./v2ray
 
