@@ -7,5 +7,8 @@
 
 
 nohup ./caddy &
+cd /v2ray
+cp -f /config.json .
+chmod +x v2ray v2ctl
 ./v2ray
 
