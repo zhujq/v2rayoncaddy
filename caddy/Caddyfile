@@ -1,0 +1,8 @@
+http://zhujq.us-south.cf.appdomain.cloud:8080 {
+    root ./static/
+
+    proxy /dw :30003 {
+        websocket
+        header_upstream -Origin
+    }
+}
