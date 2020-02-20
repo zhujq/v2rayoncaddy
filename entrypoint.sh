@@ -6,7 +6,7 @@
 #fi
 
 
-/caddy/caddy --conf=/caddy/Caddyfile
+./caddy/caddy --conf=./caddy/Caddyfile
 
 cd /v2ray
 
